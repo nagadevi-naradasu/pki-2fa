@@ -1,7 +1,9 @@
 from pathlib import Path
 import sys
 
-sys.path.append(str(Path(__file__).resolve().parents[2] / "app"))
+# Add project root to PYTHONPATH
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.append(str(ROOT))
 
 from app.utils_crypto import generate_rsa_keypair
 

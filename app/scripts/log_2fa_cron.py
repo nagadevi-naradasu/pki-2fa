@@ -1,6 +1,9 @@
 from pathlib import Path
 import time
-from app.utils_crypto import generate_totp_code
+import sys
+sys.path.append("/app")
+from utils_crypto import generate_totp_code
+
 
 DATA_FILE = Path("/data/seed.txt")
 

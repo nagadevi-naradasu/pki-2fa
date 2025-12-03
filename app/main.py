@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from pathlib import Path
-from app.utils_crypto import load_private_key, decrypt_seed, generate_totp_code, verify_totp_code
+from utils_crypto import load_private_key, decrypt_seed, generate_totp_code, verify_totp_code
 
 DATA_DIR = Path("/data")
 SEED_FILE = DATA_DIR / "seed.txt"
